@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>اللوحة الرئيسية</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f4f6f9;
+    }
+    .dashboard-container {
+      padding: 20px;
+    }
+    .circle-card {
+      border: 1px solid #ddd;
+      padding: 15px;
+      margin: 10px 0;
+      border-radius: 5px;
+      background-color: #fff;
+    }
+    .circle-card h5 {
+      font-size: 18px;
+      font-weight: bold;
+    }
+    .circle-card p {
+      font-size: 14px;
+    }
+    .logout-btn {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+  </style>
+</head>
+<body>
+  <!-- زر تسجيل الخروج -->
+  <button class="btn btn-danger logout-btn" id="logout-btn">تسجيل الخروج</button>
+
+  <div class="container dashboard-container">
+    <h2 class="text-center mb-4">اللوحة الرئيسية</h2>
+    <button class="btn btn-primary mb-4" onclick="window.location.href='create-circle.html'">إنشاء جمعية جديدة</button>
+    <div id="circle-list">
+      <!-- سيتم عرض الجمعيات هنا -->
+    </div>
+  </div>
+
+  <script src="dashboard.js"></script>
+</body>
+</html>

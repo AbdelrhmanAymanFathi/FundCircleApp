@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>تفاصيل الجمعية</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f8f9fa;
+      padding-top: 20px;
+    }
+
+    .circle-card {
+      margin-bottom: 20px;
+    }
+
+    .circle-card h5 {
+      font-size: 1.5rem;
+      color: #007bff;
+    }
+
+    .btn-secondary, .btn-warning, .btn-info {
+      margin-top: 10px;
+    }
+
+    /* Responsive design */
+    @media (max-width: 576px) {
+      .circle-card h5 {
+        font-size: 1.2rem;
+      }
+
+      .table th, .table td {
+        font-size: 0.9rem;
+      }
+
+      .btn {
+        width: 100%;
+        margin-bottom: 5px;
+      }
+
+      .circle-card {
+        padding: 10px;
+        border-radius: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- زر العودة -->
+    <button class="btn btn-outline-primary" onclick="window.history.back()">العودة</button>
+    
+    <div id="circle-details" class="circle-card"></div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="circle-details.js"></script>
+</body>
+</html>

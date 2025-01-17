@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>إنشاء حساب جديد</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <style>
+    body {
+      background-color: #f4f6f9;
+      font-family: 'Arial', sans-serif;
+    }
+    .create-account-container {
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .create-account-btn {
+      background-color: #007bff;
+      color: white;
+    }
+    .create-account-btn:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div class="container d-flex justify-content-center align-items-center" style="height: 100vh;">
+    <div class="create-account-container">
+      <h3 class="text-center mb-4">إنشاء حساب جديد</h3>
+      <form id="create-account-form">
+        <div class="form-group">
+          <label for="new-username">اسم المستخدم</label>
+          <input type="text" class="form-control" id="new-username" required>
+        </div>
+        <div class="form-group">
+          <label for="new-password">كلمة المرور</label>
+          <input type="password" class="form-control" id="new-password" required>
+        </div>
+        <div class="form-group">
+          <label for="confirm-password">تأكيد كلمة المرور</label>
+          <input type="password" class="form-control" id="confirm-password" required>
+        </div>
+        <button type="submit" class="btn create-account-btn btn-block">إنشاء الحساب</button>
+      </form>
+      <div class="text-center mt-3">
+        <a href="index.html">لديك حساب بالفعل؟ تسجيل الدخول</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="create-account.js"></script>
+</body>
+</html>
