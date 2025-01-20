@@ -1,0 +1,43 @@
+{
+  "name": "react-native-imask",
+  "author": "Alexey Kryazhev",
+  "license": "MIT",
+  "version": "7.6.1",
+  "homepage": "https://imask.js.org/",
+  "description": "React Native Input Mask",
+  "main": "dist/react-native-imask.js",
+  "module": "esm/index.js",
+  "type": "module",
+  "repository": "https://github.com/uNmAnNeR/imaskjs/tree/master/packages/react-native-imask",
+  "exports": {
+    ".": {
+      "import": "./esm/index.js",
+      "require": "./dist/react-native-imask.cjs",
+      "default": "./dist/react-native-imask.js"
+    },
+    "./*": "./*"
+  },
+  "scripts": {
+    "lint": "eslint src",
+    "prebuild": "npm run lint -- --quiet && rimraf --glob \"{dist,esm}\"",
+    "build": "rollup -c"
+  },
+  "keywords": [
+    "react native",
+    "javascript",
+    "input",
+    "mask"
+  ],
+  "dependencies": {
+    "prop-types": "^15.8.1",
+    "react-imask": "^7.6.1"
+  },
+  "peerDependencies": {
+    "react": "^18.3.1",
+    "react-native": "^0.74.1"
+  },
+  "engines": {
+    "npm": ">=4.0.0"
+  },
+  "gitHead": "228f2a4dce7125d0c7156868fcb5364b4487c8e6"
+}

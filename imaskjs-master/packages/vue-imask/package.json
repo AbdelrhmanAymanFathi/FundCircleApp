@@ -1,0 +1,79 @@
+{
+  "name": "vue-imask",
+  "author": "Alexey Kryazhev",
+  "license": "MIT",
+  "version": "7.6.1",
+  "description": "Vue input mask",
+  "main": "dist/vue-imask.js",
+  "module": "esm/index.js",
+  "type": "module",
+  "types": "index.d.ts",
+  "repository": "https://github.com/uNmAnNeR/imaskjs/tree/master/packages/vue-imask",
+  "contributors": [
+    "naprimer",
+    "Yacine Hmito <yacine.hmito@gmail.com>",
+    "cangku"
+  ],
+  "exports": {
+    ".": {
+      "types": "./esm/index.d.ts",
+      "import": "./esm/index.js",
+      "require": "./dist/vue-imask.cjs",
+      "default": "./dist/vue-imask.js"
+    },
+    "./esm": {
+      "types": "./esm/index.d.ts",
+      "default": "./esm/index.js"
+    },
+    "./esm/*": {
+      "types": "./esm/*.d.ts",
+      "default": "./esm/*.js"
+    },
+    "./esm/*.js": {
+      "types": "./esm/*.d.ts",
+      "default": "./esm/*.js"
+    },
+    "./*": {
+      "types": "./esm/*.d.ts",
+      "default": "./esm/*.js"
+    },
+    "./*.js": {
+      "types": "./esm/*.d.ts",
+      "default": "./esm/*.js"
+    }
+  },
+  "typesVersions": {
+    ">=4.2": {
+      "*": [
+        "esm/*"
+      ],
+      "esm/*": [
+        "esm/*"
+      ]
+    }
+  },
+  "scripts": {
+    "lint": "eslint src",
+    "prebuild": "npm run lint -- --quiet && rimraf --glob \"{dist,esm}\"",
+    "build": "tsc --emitDeclarationOnly && rollup -c",
+    "watch": "rollup -c -w"
+  },
+  "keywords": [
+    "vue",
+    "imask",
+    "javascript",
+    "input",
+    "mask"
+  ],
+  "dependencies": {
+    "imask": "^7.6.1",
+    "vue-demi": "^0.14.7"
+  },
+  "peerDependencies": {
+    "vue": ">=2.7"
+  },
+  "gitHead": "228f2a4dce7125d0c7156868fcb5364b4487c8e6",
+  "devDependencies": {
+    "vue": "^2.7.16"
+  }
+}

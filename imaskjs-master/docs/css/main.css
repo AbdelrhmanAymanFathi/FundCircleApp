@@ -1,0 +1,209 @@
+@import "highlight.css";
+
+header {
+  margin: 30px 0;
+  text-align: center;
+  position: relative;
+}
+
+nav {
+  margin: 0;
+}
+
+header nav {
+  margin-top: 24px;
+}
+
+footer nav {
+  border-bottom: none;
+}
+
+.breadcrumbs ul {
+  flex-wrap: wrap;
+}
+
+h1 sub {
+  font-size: 30px;
+  font-style: italic;
+}
+
+h1 em {
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 8px;
+  display: block;
+  font-style: italic;
+  font-weight: normal;
+}
+
+h4 {
+  margin-bottom: 4px;
+}
+
+a:hover {
+  transition: all linear 0.2s;
+  color: #3794de;
+  text-decoration: underline;
+}
+
+body {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+.toggle-panel {
+  position: relative;
+  z-index: 1;
+}
+
+.toggle-panel > label {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  font-size: 12px;
+  color: #3794de;
+}
+
+.toggle-panel > label:hover {
+  text-decoration: underline;
+}
+
+.toggle-panel > input[type=checkbox] {
+  display: none;
+}
+
+.toggle-panel .toggle-panel-content {
+  display: none;
+  clear: both;
+}
+
+.toggle-panel > input[type=checkbox]:checked + .toggle-panel-content {
+  display: block;
+}
+
+body {
+  padding: 0 20px;
+}
+
+.unmasked-value {
+  float: left;
+}
+
+.form-item {
+  clear: both;
+}
+
+.section-h {
+  margin-top: 50px;
+}
+
+.section-h a {
+  text-decoration: none;
+}
+
+.section-h:after {
+  content: '#';
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 1;
+  color: rgba(0, 0, 0, 0.3);
+  margin-left: 8px;
+}
+
+.example__complete {
+  display: none;
+  margin-left: 5px;
+}
+
+.example__complete::after {
+  content: '✔';
+}
+
+.learn-more {
+  position: absolute;
+  right: 1rem;
+  bottom: 0.5rem;
+  font-size: 14px;
+}
+
+footer {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.color-input {
+  position: relative;
+}
+
+#color-box {
+  display: block;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  bottom: 5px;
+  width: 30px;
+  background-color: #ff0;
+}
+
+kbd {
+  font-size: 14px;
+  font-weight: normal;
+}
+
+fieldset p {
+  margin: 10px 0;
+}
+
+fieldset *:last-child {
+  margin-bottom: 0;
+}
+
+.input-select {
+  display: flex;
+}
+
+.input-select select {
+  width: 150px;
+}
+
+.input-checkbox {
+  display: flex;
+}
+
+.input-checkbox label input {
+  transform: translateY(2px);
+}
+.input-checkbox label {
+  display: flex;
+  align-items: center;
+  padding-left: 12px;
+  margin: 0;
+}
+
+.github-link {
+  text-indent: -9999px;
+  background-image: url(../i/github-mark.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  opacity: 0.7;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: opacity 0.2s ease;
+}
+
+.github-link:hover {
+  opacity: 1;
+}
+
+code {
+  background-color: rgba(55, 148, 222, 0.17);
+}

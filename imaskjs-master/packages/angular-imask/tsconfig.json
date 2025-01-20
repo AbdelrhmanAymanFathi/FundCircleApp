@@ -1,0 +1,39 @@
+{
+  "extends": "../../tsconfig.json",
+  "include": ["src"],
+
+  "compilerOptions": {
+    "outDir": "./dist",
+    "noImplicitOverride": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "sourceMap": true,
+    "declaration": false,
+    "downlevelIteration": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "useDefineForClassFields": false,
+    "baseUrl": "./",
+    "paths": {
+      "@angular/*": [
+        "node_modules/@angular/*"
+      ],
+      "imask": [
+        "../imask"
+      ],
+      "angular-imask": [
+        "dist"
+      ],
+    },
+    "types": [],
+  },
+  "angularCompilerOptions": {
+    "skipTemplateCodegen": true,
+    "strictMetadataEmit": true,
+    "strictInjectionParameters": true,
+    "enableResourceInlining": true,
+    "skipLibCheck": true,
+    "compilationMode": "partial",
+  }
+}
