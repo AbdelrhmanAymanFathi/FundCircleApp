@@ -1,7 +1,0 @@
-{
-  "entryPoints": ["packages/*"],
-  "name": "IMask",
-  "entryPointStrategy": "packages",
-  "includeVersion": true,
-  "out": "./_site/api"
-}

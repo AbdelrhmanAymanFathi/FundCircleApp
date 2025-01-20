@@ -1,8 +1,0 @@
-title: imaskjs
-description: vanilla javascript input mask
-repository: https://github.com/uNmAnNeR/imaskjs
-baseurl: ""
-google_analytics: UA-40774777-5
-plugins:
-  - jekyll-seo-tag
-keep_files: [api]
